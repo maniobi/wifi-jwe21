@@ -1,0 +1,38 @@
+#main-menu ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+#main-menu li {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@media (min-width: 992px) {
+    #main-menu ul {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    #main-menu ul li {
+        margin-right: 15px;
+    }
+
+    #main-menu a {
+        color: var(--grey);
+        text-decoration: none;
+        padding: 1em;
+        font-size: 18px;
+    }
+
+    #main-menu a:hover {
+        color: var(--brown);
+        text-decoration: underline;
+    }
+
+}

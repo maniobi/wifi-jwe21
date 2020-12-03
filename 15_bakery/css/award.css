@@ -1,0 +1,13 @@
+#award {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#award img {
+    position: absolute; 
+    top: 0; 
+    left: 50%;
+    width: 110px;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+}

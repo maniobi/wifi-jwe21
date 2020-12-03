@@ -1,0 +1,84 @@
+:root {
+    --brown: #D0B085;
+    --grey: #707070;
+}
+
+
+/* josefin-sans-regular - latin */
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/josefin-sans-v12-latin-regular.woff2') format('woff2'), url('../fonts/josefin-sans-v12-latin-regular.woff') format('woff');
+}
+
+
+/* josefin-sans-bold - latin */
+
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''), url('../fonts/josefin-sans-v12-latin-700.woff2') format('woff2'), url('../fonts/josefin-sans-v12-latin-700.woff') format('woff');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 110%;
+}
+
+* {
+    /* remind the box model */
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.inner-wrapper {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 20px 25px;
+    border: 2px solid;
+    display: inline-block;
+    margin-bottom: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn-soft {
+    color: var(--brown);
+    border-color: var(--brown);
+}
+
+.btn-hard {
+    color: white;
+    background-color: var(--brown);
+    border-color: var(--brown);
+}
+
+#top .inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+}

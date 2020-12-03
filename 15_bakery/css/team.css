@@ -1,0 +1,42 @@
+.team .member {
+    margin-bottom: 3rem;
+}
+
+.team .member blockquote small {
+    display: block;
+    margin-top: 1em;
+    color: var(--grey);
+}
+
+@media (min-width: 768px) {
+
+    .team .member {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .team .member:nth-child(2n) {
+        flex-flow: row-reverse nowrap;
+    }
+    
+    .team .member:nth-child(2n) blockquote {
+        text-align: right;
+    }
+    
+    .team .member img {
+        flex-basis: 40%;
+        object-fit: contain;
+        object-position: right;
+    }
+
+    .team .member:nth-child(2n) img {
+        object-position: left;
+    }
+
+
+    .team .member blockquote {
+        flex-basis: 60%;
+    }
+
+}

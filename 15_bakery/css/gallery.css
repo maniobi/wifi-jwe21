@@ -1,0 +1,149 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .column {
+    flex-basis: 50%;
+    overflow: hidden;
+    border-right: 5px solid #fff;
+}
+
+.gallery .column:nth-child(2n) {
+    border-right: none;
+}
+
+.gallery img {
+    display: block;
+    border-bottom: 5px solid #fff;
+    object-fit: cover;
+}
+
+.gallery .landscape {
+    width: 100%;
+    height: 30vw;
+}
+
+.gallery .portrait {
+    width: 100%;
+    height: calc(30vw * 2);
+}
+
+.grid-gallery {
+    display: grid;
+
+    grid-template-areas: 
+    'Bild1 Bild8'
+    'Bild2 Bild9'
+    'Bild2 Bild10'
+    'Bild3 Bild11'
+    'Bild4 Bild11'
+    'Bild5 Bild12'
+    'Bild5 Bild13'
+    'Bild6 Bild13'
+    'Bild7 Bild14'
+    'Bild7 Bild15'
+    ;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 30vw);
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-gallery img:nth-child(1) {
+    grid-area: Bild1;
+}
+.grid-gallery img:nth-child(2) {
+    grid-area: Bild2;
+}
+.grid-gallery img:nth-child(3) {
+    grid-area: Bild3;
+}
+.grid-gallery img:nth-child(4) {
+    grid-area: Bild4;
+}
+.grid-gallery img:nth-child(5) {
+    grid-area: Bild5;
+}
+.grid-gallery img:nth-child(6) {
+    grid-area: Bild6;
+}
+.grid-gallery img:nth-child(7) {
+    grid-area: Bild7;
+}
+.grid-gallery img:nth-child(8) {
+    grid-area: Bild8;
+}
+.grid-gallery img:nth-child(9) {
+    grid-area: Bild9;
+}
+.grid-gallery img:nth-child(10) {
+    grid-area: Bild10;
+}
+.grid-gallery img:nth-child(11) {
+    grid-area: Bild11;
+}
+.grid-gallery img:nth-child(12) {
+    grid-area: Bild12;
+}
+.grid-gallery img:nth-child(13) {
+    grid-area: Bild13;
+}
+.grid-gallery img:nth-child(14) {
+    grid-area: Bild14;
+}
+.grid-gallery img:nth-child(15) {
+    grid-area: Bild15;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .gallery {
+        flex-wrap: nowrap;
+    }
+
+    .gallery .column:nth-child(3n) {
+        margin-left: 5px;
+    }
+
+
+    .gallery .landscape {
+        height: 15vw;
+    }
+    
+    .gallery .portrait {
+        height: calc(15vw * 2);
+    }
+
+
+    /* grid gallery */
+
+    .grid-gallery {    
+        grid-template-areas: 
+        'Bild1  Bild8   Bild5   Bild12'
+        'Bild2  Bild9   Bild5   Bild13'
+        'Bild2  Bild10  Bild6   Bild13'
+        'Bild3  Bild11  Bild7   Bild14'
+        'Bild4  Bild11  Bild7   Bild15'
+        ;
+    
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 15vw);    
+    }
+
+
+    
+
+}

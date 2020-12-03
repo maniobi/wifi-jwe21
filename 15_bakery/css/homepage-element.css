@@ -1,0 +1,83 @@
+.homepage-element .item {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.homepage-element .item img {
+    max-width: 100%;
+    width: 100%;
+    height: 65vw;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.homepage-element .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1.8em;
+    border: 4px solid var(--brown);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* hier geschehen alle Formatierung ab einer Viewport-Breite von 480px */
+@media (min-width: 480px) {
+    .homepage-element .four-columns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .homepage-element .four-columns .item {
+        flex-basis: calc(50% - 0.5em);
+    }
+
+    .homepage-element .item img {
+        height: 35vw;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+    .homepage-element .four-columns .item:nth-child(2n) {
+        margin-left: 1em;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    .homepage-element .four-columns .item {
+        flex-basis: calc(25% - 15px);
+        /*  [] 20px [] 20px [] 20px []      */
+
+        margin-left: 20px;
+    }
+
+    .homepage-element .four-columns .item:first-child {
+        margin-left: 0;
+    }
+
+    .homepage-element .item img {
+        height: 20vw;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+    .homepage-element .item img {
+        height: 230px;
+    }
+}
