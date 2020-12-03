@@ -120,13 +120,11 @@ console.log(USER_NAME);
 
 
 let example1 = 'hui!';
-
 {
-    let neueVariable = 'Loopy!';
     console.log(example1);
-     
+    example1 = 'neuer Wert aus dem Scope';
 }
-
+console.log(example1);
 
 
 //console.log(example1);
