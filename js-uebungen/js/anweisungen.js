@@ -74,7 +74,7 @@ if( 'Name'.length > 3) {
 
 // true (Vorsicht: Stelle 0 vs. Stelle 1)
 if( 'Jasmin'.indexOf('a') == 1 ) {
-
+    
 }
 
 
