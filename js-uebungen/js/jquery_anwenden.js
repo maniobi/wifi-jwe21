@@ -3,6 +3,7 @@
 console.log('die Seite ist geladen');
 
 
+
 $('#calc').click(
     function() {
         console.log('button clicked');
@@ -13,3 +14,39 @@ $('#calc').click(
 
     }
 );
+
+// https://www.w3schools.com/jquery/jquery_events.asp
+$('#events').on(
+    {
+    
+        'mouseenter': function() {
+            
+            $(this).css(
+                {
+                    'background-color': 'yellow',
+                    'color': 'red'
+                }
+            );
+        },
+
+        'mouseleave': function() {
+            $(this).css(
+                {
+                    'background-color': 'blue',
+                    'color': 'white'
+                }
+            );
+        }
+    
+    }
+);
+
+$('#events2').on({
+    'mouseenter': function() {
+        $(this).addClass('mouseover');
+    },
+
+    'mouseleave': function() {
+        $(this).removeClass('mouseover');
+    }
+});
