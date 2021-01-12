@@ -49,6 +49,7 @@ spruch = '~ ' + spruch + ' ~';
 
 var inputFeld1 = '<input type="text" value="test">';
 var inputFeld2 = "<input type=\"text\" value=\"test\">";
+var inputFeld3 = `<input type="text" value="${spruch}">`;
 //console.log(inputFeld1, inputFeld2);
 
 //document.write('hallo');

@@ -1,21 +1,34 @@
+let zufallszahl;
+
 let farben = [
     'yellow',
     'brown',
-    'deepred',
+    'red',
     'green',
     'orange'
 ];
 
 function randomColor() {
-    let zufallszahl = Math.floor( 
+
+    let neueZahl = Math.floor( 
         Math.random() * farben.length 
     );
 
-    return farben[zufallszahl];
+    if( neueZahl != zufallszahl) {
+        zufallszahl = neueZahl;
+
+        $('#farbe').css({
+            'background-color' : farben[zufallszahl]
+        });
+        
+        console.log(farben[zufallszahl]);
+
+    } else {
+        randomColor();
+    }
 }
 
+
 $('button.random').click( function(){
-    $('#farbe').css({
-        'background-color' : randomColor()
-    });
+    randomColor();
 });
