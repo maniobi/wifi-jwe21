@@ -23,7 +23,7 @@ img {
 
 #gallery a img {
     position: relative;
-    opacity: 0.8;
+    opacity: .8;
     transition: opacity .3s ease, transform .3s ease;
 }
 
