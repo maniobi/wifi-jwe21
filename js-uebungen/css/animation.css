@@ -1,0 +1,13 @@
+.animatedBox {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    background-color: #201469;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
