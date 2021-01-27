@@ -1,0 +1,107 @@
+:root {
+    --bc1: #1fabc7;
+    --bc2: #1f6e7e;
+    --c1: #FFE800;
+    --c2: #463333;
+}
+
+html, body {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bc1);
+    font-size: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* SCROLL */
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scroll {
+    width: 50px;
+    height: 500px;
+    margin-bottom: 5px;
+    background-color: var(--bc2);
+}
+
+/* BOX */
+
+.hidden {
+    display: none !important;
+}
+
+.box {
+    position: fixed;
+    top: calc(50vh - 100px);
+    right: calc(50vw - 100px);
+    width: 0px;
+    height: 0px;
+    background-color: var(--c1);
+    color: var(--c2);
+    border-radius: 0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -6px 6px var(--c2);
+}
+
+.box p {
+    font-size: 500%;
+}
+
+/* SCROLLBOX */
+
+#scrollBox {
+    position: fixed;
+    top: 5vh;
+    left: 8px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--bc1);
+    color: var(--bc2);
+    border: 5px solid var(--bc2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+}
+
+/* BUTTON */
+
+.btnPos {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    background-color: var(--c1);
+    box-shadow: -6px 6px 0 var(--c2);
+    color: var(--c2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .15s linear 0s;
+}
+
+.btn:hover {
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 var(--c2);
+}

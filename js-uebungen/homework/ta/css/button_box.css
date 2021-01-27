@@ -1,0 +1,127 @@
+:root {
+    --grey-dark: #444444;
+    --grey-middle: #686868;
+    --grey-light: #B4B4B4;
+    --red: #a00060;
+    --red-dark: #6c0041;
+    --blue: #02a6b1;
+    --yellow: #f2ce00;
+    --green: #009a69;
+}
+
+@font-face {
+    font-family: "Jakob";
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Jakob-Regular.otf);
+}
+
+@font-face {
+    font-family: "Jakob";
+    font-style: normal;
+    font-weight: 1000;
+    src: url(../fonts/Jakob-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Jakob", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+.header {
+    background-color: #ffffff;
+    height: 150px;
+}
+
+.box-wrapper {
+    max-width: 1024px;
+    height: 400px;
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: absolute;
+    /* wg. Animation? */
+    background-color: var(--red);
+    /*width: 300px;
+    height: 300px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.hide {
+    display: none;
+}
+*/
+
+.clk-num {
+    font-family: "Jakob";
+    font-size: 200px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bg {
+    background-color: var(--red);
+    height: 400px;
+}
+
+.btn-wrapper {
+    max-width: 1024px;
+    height: 400px;
+    padding: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: var(--red);
+    padding: 50px;
+    border: none;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    font-family: "Jakob";
+    font-size: 80px;
+    font-weight: 1000;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: transform .5s ease;
+    transform: scale(0.9);
+}
+
+.footer {
+    background-color: #ffffff;
+    height: 500px;
+}

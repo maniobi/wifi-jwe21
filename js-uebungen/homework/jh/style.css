@@ -1,0 +1,28 @@
+
+
+
+#box {
+    position: fixed;
+    left: 30%;
+    width: 300px;
+    height: 300px;
+    background: rgb(231, 56, 231);
+    justify-content: center;
+    z-index: 100;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    box-shadow: 20px 20px 40px black;
+    
+
+}
+
+.btn {
+    
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(241, 169, 241);
+    box-shadow: 0 0 20px black;
+    
+}

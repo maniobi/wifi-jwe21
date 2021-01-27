@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- removes favicon error -->
+
+    <link rel="stylesheet" href="css/ue01AnimationStyle.css">
+    <title>Übung zu jQuery / Javascript</title>
+
+</head>
+
+<body>
+
+    <!-- TODOs:
+    1. Beim Klick auf den Button, wird die Box eingeblendet (mit einer eleganten Animation)
+    2. Beim Scrollen nach unten wird ab einer Scroll-Position von 300px (von oben) die Box zu einem Kreis
+    3. Bei jedem Klick auf den Button erhöht sich die Zahl in der Box -->
+
+    <!-- ScrollSideBar -->
+    <div class="container">
+        <div class="scroll"></div>
+        <div class="scroll"></div>
+        <div class="scroll"></div>
+        <div class="scroll"></div>
+    </div>
+
+    <!-- ScrollBox indicates scroll position -->
+    <div id="scrollBox">
+        <p>0</p>
+    </div>
+
+    <!-- Box -->
+    <div class="box hidden"></div>
+
+    <!-- Button -->
+    <div class="btnPos">
+        <div class='btn'>
+            <p>show</p>
+        </div>
+    </div>
+
+
+    <!-- jquery core script einfügen -->
+    <script src="js/.vendor/jquery-3.5.1.js"></script>
+
+    <!-- my js code -->
+    <script src="js/ue01Animation.js"></script>
+
+</body>
+
+</html>
