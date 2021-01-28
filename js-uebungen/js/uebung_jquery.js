@@ -51,6 +51,7 @@ $(window).scroll(function() {
     if(scrollPos > 300) {
 
         if(scrollPostitionBasedAnimationStarted != true && boxShape == 'square') {
+            
             scrollPostitionBasedAnimationStarted = true;
 
             box.stop().animate({
